@@ -1,1 +1,1 @@
-This is my-awesome-peoject
+This is GO calculator
