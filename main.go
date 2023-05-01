@@ -37,9 +37,9 @@ func main() {
 	if len(operation) != 3 {
 		fmt.Print(err1)
 	} else if operation[1] == "+" || operation[1] == "-" || operation[1] == "*" || operation[1] == "/" {
-		fmt.Print(err2)
-	} else {
 		enteringAndValidatingData(operation)
+	} else {
+		fmt.Print(err2)
 	}
 }
 
