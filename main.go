@@ -35,7 +35,7 @@ func main() {
 	operation := strings.Split(numberOperation, " ")
 
 	if len(operation) != 3 {
-		if operation[1] == "+" || operation[1] == "-" || operation[1] == "*" || operation[1] == "/" {
+		if (len(operation) > 2) && (operation[1] == "+" || operation[1] == "-" || operation[1] == "*" || operation[1] == "/") {
 			fmt.Print(err2)
 		} else {
 			fmt.Print(err1)
