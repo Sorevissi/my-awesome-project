@@ -35,11 +35,13 @@ func main() {
 	operation := strings.Split(numberOperation, " ")
 
 	if len(operation) != 3 {
-		fmt.Print(err1)
-	} else if operation[1] == "+" || operation[1] == "-" || operation[1] == "*" || operation[1] == "/" {
-		enteringAndValidatingData(operation)
+		if operation[1] == "+" || operation[1] == "-" || operation[1] == "*" || operation[1] == "/" {
+			fmt.Print(err2)
+		} else {
+			fmt.Print(err1)
+		}
 	} else {
-		fmt.Print(err2)
+		enteringAndValidatingData(operation)
 	}
 }
 
